@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+* {
+  @apply box-border p-0 m-0;
+}
+
+body {
+  @apply py-20 flex flex-col items-center justify-center;
+}
