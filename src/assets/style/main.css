@@ -7,3 +7,12 @@
 body {
   @apply py-20 flex flex-col items-center justify-center;
 }
+
+/* form */
+.register-form input {
+  @apply w-96 h-10 px-4 text-sm border border-neutral-400 hover:border-teal-400 focus:border-teal-400 focus:ring-4 focus:ring-teal-100 focus:outline-none rounded-md transition-all duration-300;
+}
+
+.register-btn {
+  @apply w-96 h-10 bg-teal-600 hover:brightness-110 rounded-md cursor-pointer transition-all duration-300;
+}
