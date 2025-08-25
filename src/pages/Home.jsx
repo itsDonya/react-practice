@@ -4,7 +4,7 @@ import Form from "../components/Form";
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-6">
-      <h1 className="text-3xl font-black">Welcome Sweetheart :)</h1>
+      <h1 className="text-xl font-bold">Welcome Sweetheart :)</h1>
 
       <Form />
     </div>
