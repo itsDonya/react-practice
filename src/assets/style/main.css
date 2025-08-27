@@ -5,7 +5,7 @@
 }
 
 body {
-  @apply py-20 flex flex-col items-center justify-center;
+  @apply py-10 flex flex-col items-center justify-center;
 }
 
 /* form */
