@@ -1,14 +1,11 @@
 import React from "react";
-import { useQuery } from "@tanstack/react-query";
-import Axios from "axios";
+
+// hookes
+import { useCafFact } from "../hooks/useCatFact";
 
 const Fact = () => {
-  const { data, isPending, isError, error, refetch } = useQuery({
-    queryKey: ["fact"],
-    queryFn: () => {
-      return Axios.get("https://catfact.ninja/fact").then((res) => res.data);
-    },
-  });
+  const { data, isPending, isError, error, refetch } =
+    useCafFact("Reftech Done!");
 
   if (isError)
     return (
