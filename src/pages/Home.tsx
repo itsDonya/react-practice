@@ -1,11 +1,12 @@
 import React from "react";
+
 import Login from "../components/Login";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-6">
+    <>
       <Login />
-    </div>
+    </>
   );
 };
 
