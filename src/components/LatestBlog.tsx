@@ -1,7 +1,7 @@
 import React from "react";
 
 // hooks
-import { useFact } from "../hooks/useFact";
+import { useFact } from "../hooks/useBlog";
 
 // types
 type propsTypes = {
