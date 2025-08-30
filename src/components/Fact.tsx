@@ -3,10 +3,14 @@ import React from "react";
 // hooks
 import { useFact } from "../hooks/useFact";
 
-const Fact: React.FC = () => {
-  const { data } = useFact();
+// types
+type propsTypes = {
+  timestamp: number;
+};
+
+const Fact: React.FC<propsTypes> = ({ timestamp }: propsTypes) => {
+  const { data } = useFact(timestamp);
 
   return <h1 className="w-96 mx-auto">{data?.blog.title}</h1>;
 };
-
 export default Fact;
